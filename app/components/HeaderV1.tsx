@@ -2,14 +2,19 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronDownIcon, ShoppingBagIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon, ShoppingBagIcon, UserIcon } from "@heroicons/react/24/outline";
+
+import CartDrawer from "./CartDrawer";
+import ProfileModal from "./ProfileModal";
 
 export default function HeaderV1() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [cartOpen, setCartOpen] = useState(false);
+    const [profileOpen, setProfileOpen] = useState(false);
 
     return (
-        <header className="fixed top-5 left-0 right-0 z-50">
-            <div className="mx-auto max-w-6xl px-6 py-3 flex items-center justify-between rounded-2xl border border-white/10 bg-neutral-900/80 backdrop-blur-md shadow-lg">
+        <header className="fixed top-5 left-0 right-0 z-[1000]">
+            <div className="mx-auto max-w-6xl px-6 py-3 flex items-center justify-between rounded-4xl border border-white/10 bg-neutral-900/80 backdrop-blur-md shadow-lg">
                 {/* Logo V1 */}
                 <Link href="/v1" className="text-lg font-semibold tracking-tight text-white">
                     FTN<span className="text-indigo-400">.</span>
@@ -23,11 +28,12 @@ export default function HeaderV1() {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    {/* Simple Version Switcher */}
+                    {/* Version Switcher */}
                     <div className="relative group">
                         <button
                             className="flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-white/50 hover:text-white transition"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            type="button"
                         >
                             V1
                             <ChevronDownIcon className="h-3 w-3" />
@@ -42,11 +48,29 @@ export default function HeaderV1() {
                         </div>
                     </div>
 
-                    <Link href="/v1/shop" className="rounded-full bg-white/10 p-2 text-white/80 hover:bg-white/20 hover:text-white transition">
+                    <div className="relative">
+                        <button
+                            onClick={() => setProfileOpen(!profileOpen)}
+                            className="rounded-full bg-white/10 p-2 text-white/80 hover:bg-white/20 hover:text-white transition"
+                            type="button"
+                        >
+                            <UserIcon className="h-5 w-5" />
+                        </button>
+                        <ProfileModal isOpen={profileOpen} onClose={() => setProfileOpen(false)} variant="v1" />
+                    </div>
+
+                    <button
+                        type="button"
+                        onClick={() => setCartOpen(true)}
+                        className="rounded-full bg-white/10 p-2 text-white/80 hover:bg-white/20 hover:text-white transition"
+                        aria-label="Abrir carrito"
+                    >
                         <ShoppingBagIcon className="h-5 w-5" />
-                    </Link>
+                    </button>
                 </div>
             </div>
+
+            <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} variant="v1" />
         </header>
     );
 }

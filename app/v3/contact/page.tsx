@@ -60,7 +60,7 @@ export default function ContactPageV3() {
   }
 
   return (
-    <div className="relative min-h-[100svh] overflow-hidden bg-cyan-950 text-white">
+    <div className="relative min-h-[100svh] overflow-hidden bg-cyan-950 text-white mt-10">
       <V3Background />
 
       <div className="relative mx-auto flex min-h-[100svh] w-full max-w-2xl items-center px-6 py-16">
@@ -73,10 +73,7 @@ export default function ContactPageV3() {
           <TopBarV3 progress={progress} phase={phase} />
 
           <div className="px-6 pb-6 pt-6 sm:px-8 sm:pb-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
-              <span className="h-1.5 w-1.5 rounded-full bg-white/60" />
-              CONTACT
-            </div>
+           
 
             <h1 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
               Send a quick message.

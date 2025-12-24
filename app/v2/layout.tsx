@@ -1,4 +1,5 @@
 import HeaderV2 from "../components/HeaderV2";
+import Footer from "../components/Footer";
 import Link from "next/link";
 
 export default function LayoutV2({
@@ -7,18 +8,14 @@ export default function LayoutV2({
     children: React.ReactNode;
 }) {
     return (
-        <div className="contents" data-theme="warm">
+        <div className="min-h-screen bg-background text-foreground" data-theme="warm">
             <HeaderV2 />
 
-            <main className="min-h-screen pt-24 px-4 max-w-7xl mx-auto">
+            <main className="min-h-screen">
                 {children}
             </main>
 
-            <footer className="border-t border-border bg-muted/20 mt-20">
-                <div className="mx-auto max-w-6xl px-4 py-16 grid gap-12 md:grid-cols-3">
-                    <div className="text-sm text-foreground/60">© 2024 V2 Warm Design</div>
-                </div>
-            </footer>
+            <Footer />
         </div>
     );
 }

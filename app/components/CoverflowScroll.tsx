@@ -80,7 +80,8 @@ export default function CoverflowAdjacent({
 
             <div className="relative h-[420px] md:h-[540px] overflow-visible">
                 {/* Viñeta */}
-                <div className="pointer-events-none absolute inset-0">
+                {/* Vignette removed as per user request */}
+                <div className="pointer-events-none absolute inset-0 hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.35)_55%,rgba(0,0,0,0.9)_100%)]" />
                     <div className="absolute left-0 inset-y-0 w-32 bg-gradient-to-r from-black/85 to-transparent" />
                     <div className="absolute right-0 inset-y-0 w-32 bg-gradient-to-l from-black/85 to-transparent" />

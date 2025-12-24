@@ -79,8 +79,7 @@ export default function ContactPage() {
             </h1>
 
             <p className="mt-4 text-white/60">
-              Share your idea and I’ll reply with next steps. Short, clear,
-              no fluff.
+             Lorem ipsum dolor sit amet consectetur adipiscing elit sagittis dapibus
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-3">
@@ -201,7 +200,6 @@ export default function ContactPage() {
                 )}
               </AnimatePresence>
 
-              <CornerBadge />
             </motion.div>
           </div>
         </div>
@@ -359,14 +357,7 @@ function StatPill({ label, value }: { label: string; value: string }) {
   );
 }
 
-function CornerBadge() {
-  return (
-    <div className="pointer-events-none absolute right-4 top-4 hidden items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60 sm:inline-flex">
-      <span className="h-1.5 w-1.5 rounded-full bg-white/50" />
-      v1
-    </div>
-  );
-}
+
 
 function SuccessBurst() {
   return (

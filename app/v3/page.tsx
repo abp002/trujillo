@@ -1,22 +1,11 @@
 import FluidLinesBg from "../components/FluidLinesBg";
+import MasonryGridV3 from "../components/MasonryGridV3";
 
 export default function PageV3() {
     return (
 
         <div className="min-h-screen bg-background text-foreground">
-            <header className="sticky top-0 z-50 border-b border-border bg-background/30 backdrop-blur">
-                <div className="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between">
-                    <div className="text-sm tracking-[0.25em] uppercase text-foreground/80">
-                        FND
 
-                    </div>
-                    <nav className="text-sm text-foreground/70 flex gap-6">
-                        <a className="hover:text-primary transition-colors" href="#work">Shop</a>
-                        <a className="hover:text-primary transition-colors" href="#about">Works</a>
-                        <a className="hover:text-primary transition-colors" href="#contact">Contact</a>
-                    </nav>
-                </div>
-            </header>
 
             <main className="mx-auto max-w-7xl px-6 py-16">
 
@@ -41,8 +30,7 @@ export default function PageV3() {
 
                             <div className="mt-10 w-[340px] rounded-2xl border border-white/10 bg-card/60 p-7 shadow-[0_30px_80px_rgba(0,0,0,0.55)] backdrop-blur-md">
                                 <p className="text-muted leading-relaxed">
-                                    No se que carajo poner pero poner algo de tu identidad como diseñador o sepa dios el q sosio los bordes se podrian quitar
-                                </p>
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sagittis dapibus, lectus suscipit a conubia venenatis molestie dui aliquet, dictumst netus odio curae pharetra eleifend magna mollis. Sagittis dui non potenti facilisi semper laoree                                </p>
                                 <div className="mt-6 flex gap-3">
                                     <button className="rounded-xl bg-primary text-primary-foreground px-4 py-2 text-sm font-semibold hover:bg-primary/90 transition-colors">
                                         Works
@@ -101,6 +89,8 @@ export default function PageV3() {
                         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
                     </div>
                 </section>
+
+                <MasonryGridV3 />
             </main>
         </div>
     );

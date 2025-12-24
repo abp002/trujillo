@@ -17,7 +17,7 @@ export default function FndSplitSection() {
 
   return (
     <section className=" relative mx-auto max-w-7xl px-6 py-16">
-      <div className="grid gap-10 md:grid-cols-2 items-stretch">
+      <div className="grid gap-5 md:grid-cols-2 items-stretch">
         {/* IZQUIERDA */}
       <div className="relative overflow-hidden rounded-3xl  bg-[#070a12]">
   {/* Logo grande de fondo */}
@@ -34,11 +34,10 @@ export default function FndSplitSection() {
   {/* Texto */}
   <div className="relative p-10 pb-44">
     <h3 className="text-4xl font-extrabold tracking-tight text-white">
-      FND Visual Lab
+      FND Graphic Desing
     </h3>
     <p className="mt-4 max-w-md text-white/70">
-      Diseñador gráfico con experiencia en la creación de piezas visuales para redes sociales y eventos.
-    </p>
+Lorem ipsum dolor sit amet consectetur adipiscing elit sagittis dapibus    </p>
   </div>
 
   {/* Tevez ANCLADO al fondo del bloque izquierdo */}

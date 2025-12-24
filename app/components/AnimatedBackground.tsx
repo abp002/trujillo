@@ -1,6 +1,6 @@
 export default function AnimatedBackground() {
   return (
-    <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+    <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
       <svg
         className="absolute inset-0 h-full w-full"
         viewBox="0 0 1200 800"
@@ -23,25 +23,25 @@ export default function AnimatedBackground() {
           </filter>
 
           <pattern
-  id="movingLines"
-  width="220"
-  height="220"
-  patternUnits="userSpaceOnUse"
-  patternTransform="translate(0 0)"
->
-  <animateTransform
-    attributeName="patternTransform"
-    type="translate"
-    from="0 0"
-    to="220 220"
-    dur="16s"
-    repeatCount="indefinite"
-  />
+            id="movingLines"
+            width="220"
+            height="220"
+            patternUnits="userSpaceOnUse"
+            patternTransform="translate(0 0)"
+          >
+            <animateTransform
+              attributeName="patternTransform"
+              type="translate"
+              from="0 0"
+              to="220 220"
+              dur="16s"
+              repeatCount="indefinite"
+            />
 
-  <path d="M-40 0 L220 260" stroke="url(#lineGrad)" strokeWidth="2" />
-  <path d="M-120 0 L140 260" stroke="url(#lineGrad)" strokeWidth="1.6" />
-  <path d="M40 0 L300 260" stroke="url(#lineGrad)" strokeWidth="1.2" />
-</pattern>
+            <path d="M-40 0 L220 260" stroke="url(#lineGrad)" strokeWidth="2" />
+            <path d="M-120 0 L140 260" stroke="url(#lineGrad)" strokeWidth="1.6" />
+            <path d="M40 0 L300 260" stroke="url(#lineGrad)" strokeWidth="1.2" />
+          </pattern>
 
         </defs>
 
