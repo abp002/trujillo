@@ -7,7 +7,7 @@ export default function PageV3() {
         <div className="min-h-screen bg-background text-foreground">
 
 
-            <main className="mx-auto max-w-7xl px-6 py-16">
+            <main className="mx-auto max-w-7xl px-6 py-16 mt-10">
 
                 <section className="relative overflow-hidden rounded-3xl border border-border bg-gradient-to-b from-primary/5 to-transparent">
                     <FluidLinesBg className="opacity-100 mix-blend-screen" intensity={1.5} />
@@ -42,9 +42,9 @@ export default function PageV3() {
                             </div>
                         </div>
 
-                        <div className="absolute right-10 top-24 w-[680px]">
+                        <div className="absolute right-10 top-24 w-[680px] ">
                             <div className="relative h-[620px]">
-                                <div className="absolute left-0 top-0 h-[520px] w-[520px] overflow-hidden rounded-3xl border border-white/10 bg-card shadow-[0_30px_100px_rgba(0,0,0,0.65)]">
+                                <div className="absolute left-0 top-0 h-[520px] w-[520px] overflow-hidden rounded-3xl border border-white/10 bg-card shadow-[0_30px_100px_rgba(0,0,0,0.65)] ">
                                     <img
                                         src="/img/archivos/malaga1.png"
                                         alt="IMG1"
