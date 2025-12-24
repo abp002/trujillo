@@ -113,7 +113,7 @@ export default function GraffitiSplit() {
                     className="text-neutral-400 text-lg leading-relaxed max-w-md"
                     variants={{ hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0 } }}
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin
+                    Pincha en la imagen de detras (izquierda) para que als dos imagenes roten ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin
                     aliquam suscipit. Vestibulum ligula dolor, vehicula ac metus lobortis, lobortis
                     maximus mauris.
                 </motion.p>
